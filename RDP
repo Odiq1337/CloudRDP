@@ -46,7 +46,7 @@ echo -e "${g}[+] ${w}Menginstall ${y}(nano,nautilus)"
 sudo apt install nautilus nano -y > /dev/null 2>&1
 
 
-sudo adduser $USER chrome-remote-desktop> /dev/null 2>&1
+sudo adduser $USER chrome-remote-desktop > /dev/null 2>&1
 echo -e "${w}  Visit: https://remotedesktop.google.com/headless"
 read -p "   Command: " cmnd;
 su - $USER -c """${cmnd}"""
