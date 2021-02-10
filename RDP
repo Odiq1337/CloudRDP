@@ -21,7 +21,7 @@ fi
 
 echo -e "${g}[+] ${w}Menginstall ${y}(Desktop Environment)"
 DEBIAN_FRONTEND=noninteractive
-apt install --assume-yes xfce4 desktop-base /dev/null 2>&1
+apt install --assume-yes xfce4 desktop-base > /dev/null 2>&1
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
 sudo apt install --assume-yes xscreensaver > /dev/null 2>&1
 sudo apt install --assume-yes --fix-broken > /dev/null 2>&1
